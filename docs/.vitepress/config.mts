@@ -1,8 +1,6 @@
 import { defineConfig } from "vitepress";
 import { defineTeekConfig } from "vitepress-theme-teek/config";
 
-const ABOUT = "/blog/01-首页/02-关于本站";
-
 // Teek 主题选项会进入 themeConfig，供主题读取
 const teekConfig = defineTeekConfig({
   teekTheme: true,
@@ -84,8 +82,11 @@ export default defineConfig({
       level: [2, 4],
     },
     nav: [
-      { text: "新增简历", link: "https://hekaixian.github.io/resume-tool/" },
-      { text: "关于", link: ABOUT },
+      {
+        text: "编辑简历",
+        link: "https://hekaixian.github.io/resume-tool/",
+        target: "_blank",
+      },
     ],
   },
 });

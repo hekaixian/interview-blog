@@ -1,0 +1,39 @@
+/* 右上角「编辑简历」按钮样式 */
+.VPNavBarMenuLink[href*="resume-tool"],
+.VPNavScreenMenuLink[href*="resume-tool"] {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  height: 32px !important;
+  padding: 0 14px !important;
+  margin-left: 8px;
+  /* 与右侧外观/社交图标到分隔线的间距保持一致 */
+  margin-right: 12px;
+  border-radius: 8px;
+  background: var(--vp-c-brand-1);
+  color: #fff !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  line-height: 1 !important;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.VPNavBarMenuLink[href*="resume-tool"]:hover,
+.VPNavScreenMenuLink[href*="resume-tool"]:hover {
+  background: var(--vp-c-brand-2);
+  color: #fff !important;
+  opacity: 0.95;
+}
+
+/* 隐藏外链小箭头，按钮更干净 */
+.VPNavBarMenuLink[href*="resume-tool"] .vpi-link-external,
+.VPNavScreenMenuLink[href*="resume-tool"] .vpi-link-external,
+.VPNavBarMenuLink[href*="resume-tool"] .icon,
+.VPNavBarMenuLink[href*="resume-tool"] svg {
+  display: none !important;
+}
+
+.VPNavScreenMenuLink[href*="resume-tool"] {
+  width: fit-content;
+  margin: 8px 16px;
+}
