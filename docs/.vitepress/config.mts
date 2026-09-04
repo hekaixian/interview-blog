@@ -84,6 +84,7 @@ export default defineConfig({
       level: [2, 4],
     },
     nav: [
+      { text: "新增简历", link: "https://hekaixian.github.io/resume-tool/" },
       { text: "关于", link: ABOUT },
     ],
   },
